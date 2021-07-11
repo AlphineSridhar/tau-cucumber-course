@@ -14,7 +14,6 @@ public class MyStepdefs {
 
     @Given("I am login page of the internet banking customer")
     public void i_am_login_page_of_the_internet_banking_customer() {
-
         System.setProperty("webdriver.chrome.driver",
                 "C:\\Users\\srid2212\\Downloads\\chromedriver.exe");
         driver = new ChromeDriver();
@@ -30,7 +29,6 @@ public class MyStepdefs {
 
 /**@When("I enter valid credentials")
     public void i_enter_valid_credentials() {
-
         driver.findElement(By.name("username")).sendKeys("tautester");
         driver.findElement(By.name("password")).sendKeys("password");
         driver.findElement(By.xpath("//*[@id=\"loginPanel\"]/form/div[3]/input")).click();
@@ -50,7 +48,4 @@ public class MyStepdefs {
         driver.quit();
     }
 
-    @When("I enter valid credentials <username> and <password>")
-    public void iEnterValidCredentialsUsernameAndPassword() {
-    }
 }
